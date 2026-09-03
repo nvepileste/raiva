@@ -231,7 +231,24 @@
   .footer-links a:hover{ text-decoration: underline; }
   .footer-sep{ margin: 0 8px; color: var(--cinza-linha); }
   .footer-contact{ margin-top: 10px !important; font-weight:600; color: var(--azul-marinho); }
-  .footer-credit{ margin-top: 14px !important; font-size: 10.5px; color: var(--azul); }
+
+  .credit-bar{
+    background: linear-gradient(135deg, var(--azul) 0%, var(--azul-2) 100%);
+    padding: 12px 20px;
+    text-align: center;
+    margin-top: 34px;
+  }
+  .credit-bar p{
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12.5px;
+    color: #D9E4F1;
+    letter-spacing: 0.01em;
+  }
+  .credit-bar strong{
+    color: var(--amarelo);
+    font-weight: 700;
+  }
 </style>
 </head>
 <body>
@@ -259,12 +276,15 @@
   <p class="footer-contact">Em caso de dúvidas, entrar em contato com o NVEPI: 3449-5212</p>
   <p>Ferramenta de apoio educacional — a conduta clínica final é sempre responsabilidade da equipe assistencial, conforme avaliação individual do caso.</p>
   <p class="footer-links">
-    <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/raiva/normas-tecnicas-da-profilaxia-da-raiva-humana.pdf/view" target="_blank" rel="noopener">Protocolo — Normas Técnicas de Profilaxia da Raiva Humana (MS)</a>
+    <a href="https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-3-6a-edicao/view" target="_blank" rel="noopener">Guia de Vigilância em Saúde, vol. 3, 6ª ed. — capítulo Raiva (MS)</a>
     <span class="footer-sep">·</span>
     <a href="https://portalsinan.saude.gov.br/images/documentos/Agravos/Atendimento%20Anti-rabico/anti_rabico_v5.pdf" target="_blank" rel="noopener">Ficha de Investigação — Atendimento Antirrábico Humano (SINAN)</a>
   </p>
-  <p class="footer-credit">Elaboração: Ianna Napoleão, Rômulo Elesbão e Lucélia Ferreira</p>
 </footer>
+
+<div class="credit-bar">
+  <p>Elaboração: <strong>Ianna Napoleão, Rômulo Elesbão e Lucélia Ferreira</strong></p>
+</div>
 
 <div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this) closeModal()">
   <div class="modal">
@@ -278,6 +298,7 @@
     <p><span class="tag">ID</span>Dose de 0,2 mL, dividida em duas aplicações de 0,1 mL cada, em dois sítios distintos, independente da apresentação (0,5 mL ou 1,0 mL). Local: inserção do músculo deltoide ou antebraço.</p>
     <p><span class="tag">IM</span>Dose total de 0,5 mL ou 1,0 mL (conforme laboratório produtor) — administrar todo o volume do frasco. Local: deltoide ou vasto lateral da coxa em crianças menores de 2 anos. Não aplicar no glúteo.</p>
     <p>Esquema: dias <strong>0, 3, 7 e 14</strong>.</p>
+    <p style="font-size:12px;font-style:italic;color:var(--cinza-texto);">Esquema de 4 doses vigente desde a Nota Informativa nº 26/2017-CGPNI/DEVIT/SVS/MS, que substituiu o esquema de 5 doses (0, 3, 7, 14 e 28) das Normas Técnicas de 2014. Confirmado no Guia de Vigilância em Saúde (MS, vol. 3, 6ª ed.).</p>
 
     <h3>Soro (SAR ou IGHAR)</h3>
     <ul>
